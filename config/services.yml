@@ -1,0 +1,17 @@
+services:
+    auth.provider.cas:
+        class: daphnetf\casauth\auth\provider\cas
+        arguments:
+            - @dbal.conn
+            - @config
+            - @passwords.manager
+            - @user
+        tags:
+            - { name: auth.provider }
+    daphnetf.casauth.listener:
+        class: daphnetf\casauth\event\main_listener
+        arguments:
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }

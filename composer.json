@@ -1,0 +1,32 @@
+{
+    "name": "daphnetf/casauth",
+    "type": "phpbb-extension",
+    "description": "CAS Auth for phpBB 3.1 interfacing with phpCAS",
+    "homepage": "https://github.com/daphnetf/casauth",
+    "version": "0.9.9",
+    "time": "2016-05-20",
+    "license": "BSD-2-Clause",
+    "authors": [{
+            "name": "Axel Lehmann",
+            "email": "lehmann.4178656ch@gmail.com",
+            "homepage": "",
+            "role": "Lead Developer"
+        }],
+    "support": {
+        "irc": "irc://irc.freenode.org/daphnetf"
+    },
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "extra": {
+        "display-name": "CAS auth",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.9,<3.2.*@dev"
+        },
+        "version-check": {
+            "host": "daphnetf.github.io",
+            "directory": "/casauth",
+            "filename": "version.json"
+        }
+    }
+}
