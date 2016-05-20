@@ -3,7 +3,7 @@
     "type": "phpbb-extension",
     "description": "CAS Auth for phpBB 3.1 interfacing with phpCAS",
     "homepage": "https://github.com/daphnetf/casauth",
-    "version": "0.9.9",
+    "version": "1.0.0",
     "time": "2016-05-20",
     "license": "BSD-2-Clause",
     "authors": [{
